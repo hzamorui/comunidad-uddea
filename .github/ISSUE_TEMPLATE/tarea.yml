@@ -1,0 +1,41 @@
+name: Tarea de investigación o gestión
+description: Benchmark, entrevistas, documentos, coordinación…
+title: "[S?] "
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Qué hay que conseguir y para qué sirve al proyecto.
+    validations:
+      required: true
+  - type: input
+    id: entregable
+    attributes:
+      label: Entregable
+      description: Qué se entrega exactamente (ficha, guion, tabla…).
+    validations:
+      required: true
+  - type: input
+    id: teams
+    attributes:
+      label: Dónde se guarda en Teams
+      placeholder: "Canal Investigación > Benchmark"
+  - type: dropdown
+    id: rol
+    attributes:
+      label: Rol responsable
+      options:
+        - Coordinación
+        - Producto y sector
+        - Datos e impacto
+        - Experiencia de usuario
+        - Seguridad, accesibilidad e inclusión
+        - Técnico e integración
+        - Desarrollo web y pruebas
+        - Todo el equipo
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Recuerda: asigna responsable, Sprint y etiqueta de rol en el tablero. Antes de pasarla a Hecho, la revisa alguien de la otra carrera."
