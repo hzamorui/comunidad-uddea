@@ -1,0 +1,37 @@
+name: Tarea de desarrollo
+description: Funcionalidad del prototipo (historia de usuario)
+title: "[DEV] "
+labels: ["rol:desarrollo"]
+body:
+  - type: textarea
+    id: historia
+    attributes:
+      label: Historia de usuario
+      value: "Como [director deportivo / scout / analista / entrenador], quiero [acción] para [beneficio]."
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: diseno
+    attributes:
+      label: Enlace al wireframe o diseño
+  - type: input
+    id: revisor
+    attributes:
+      label: Revisor de Gestión Deportiva (prueba de aceptación)
+  - type: checkboxes
+    id: hecho
+    attributes:
+      label: Definición de terminado
+      options:
+        - label: Funciona en el entorno desplegado
+        - label: Probado por alguien de Gestión Deportiva
+        - label: Documentado si queda algo simulado
